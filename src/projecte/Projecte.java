@@ -24,13 +24,14 @@ public class Projecte {
         boolean Any = false;
         double Preu = 0.0;
 
-        while (caracter > 0) {
+        while (0 <= caracter) {
             System.out.println("Menú");
             System.out.println("0. Sortir del programa");
             System.out.println("1. Afegeix moto.");
             System.out.println("2. Esborra moto.");
             System.out.println("3. Modifica motos");
             System.out.println("4. Llista motos.");
+            System.out.println("Tria una opció:");
             caracter = ent.next().charAt(0);
             switch (caracter) {
                 case '0':
