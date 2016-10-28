@@ -19,9 +19,11 @@ public class Projecte {
     public static void main(String[] args) {
         Scanner ent = new Scanner(System.in);
         char caracter = 1;
-        String Marca = null;
+        int Marca = 0;
         int Model = 0;
-        boolean Any = false;
+        int Cv = 0;
+        boolean naked = false;
+        
         double Preu = 0.0;
 
         while (0 <= caracter) {
@@ -39,6 +41,21 @@ public class Projecte {
                     break;
                 case '1':
                     System.out.println("Afegeix moto");
+                    System.out.println("Marca de la moto:");
+                    Marca = ent.nextInt();
+                    System.out.println("Model de la moto:");
+                    Model  = ent.nextInt();
+                    System.out.println("Cv");
+                    Cv = ent.nextInt();
+                    System.out.println("Que es?(Naked/Carretera)N o C:");
+.                   do {
+                    naked = ent.nextLine().toUpperCase().charAt(0);
+                    while (naked != 'N' && naked != 'D'); {
+                        
+                    }
+}
+                    System.out.println("Preu:");
+                    Preu = ent.nextDouble()
                     break;
                 case '2':
                     System.out.println("Que moto desitja borrar?");
